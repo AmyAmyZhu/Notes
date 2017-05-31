@@ -34,7 +34,7 @@ access specifiers keywords: __public, private, protected
 
 package access: classes can access the members of other classes in the same package, but outside of the package those same members appear to be private
 
-## Reusing the implementation
+### Reusing the implementation
 
 composition: "has-a" relationship, for example, "a car has an engine"
 
@@ -45,3 +45,53 @@ aggregation: composition happens dynamically(has the entire reference of another
 override: having two methods with the same method name and parameters (i.e., method signature). One of the methods is in the parent class and the other is in the child class.
 
 overload: when two or more methods in one class have the same method name but different parameters.
+
+"is-a" vs "islike-a"
+
+### Interchangeable objects with polymorphism
+
+early binding: compile time binding(find the address of functions firstly)
+
+late/dynamic binding: runtime binding(after compile, express the statement and find the function, recall cs444)
+
+C++ keyword __virtual__ means make a method to have the flexibility of latebinding
+
+upcasting: casting up to find the parent class methods, safe
+
+downcasting: casting down to find the children class methods, dangerous, need to handle exceptions
+
+### The singly rooted hierarchy
+
+garbage collector
+
+### Containers
+
+List: 
+  - ArrayList: randomly accessing is constant-time; Insert an element is expensive
+  - LinkedList: randomly accessing is expensive; Insert an element is constant-time
+
+Map, Set
+
+Parameterized types (generics): a class that the compiler can automatically customize to work with particular types
+
+```
+ArrayList<Shape> shapes = new ArrayList<Shape>();
+```
+
+### Object creation & lifetime
+
+### Exception handling: dealing with errors
+
+### Concurrent programming
+
+### Java and the Internet
+
+#### client/server computing
+
+#### The Web as a giant server
+
+#### Client-side programming
+
+#### Scripting languages
+
+#### Java
