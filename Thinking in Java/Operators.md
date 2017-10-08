@@ -1,0 +1,96 @@
+# Operators
+
+### Simpler print statements
+
+```
+import static net.mindview.util.Print.*;
+```
+
+### Using Java operators
+
+side effect: some operators change the value of an operand
+
+all operators work only with primitives
+
+'=', '==', and '!=' work with all objects
+
+__String__ class supports '+' and '+='
+
+### Assignment
+
+object: copy a reference from one place to another; if c = d for objects, both c and d point to the object that, originally, only d pointed to
+
+aliasing: two separate objects instead of discarding one and tying t1 and t2 to the same object
+```
+t1.level = t2.level;
+```
+
+### Mathematical operators
+
++, -, *, /, %
+
+__Random__:
+```
+Randon rand = new Random(47); // 47 is a seed
+// Choose value from 1 to 100
+i = rand.nextInt(100) + 1;
+```
+
+### Auto increment and decrement
+
+preincrement: ++ operator appears before the variable
+
+post-increment: ++ operator appears after the variable
+
+### Relational operators
+
+boolean result: <, >, <=, >=, ==, !=
+
+#### Testing object equivalence
+
+compare two objects by using '==' results __false__ since two objects are not the same reference though they have the same contents
+
+special method __equals()__ compare the actual contents of an object for equivalence; CAUTION: need override the method and re-implement for our classes, the default one not work
+
+### Logical operators
+
+AND(&&), OR(||), NOT(!)
+
+#### Short-circuiting
+
+short-circuiting: expression will be evaluated only until the truth or falsehood of the entire expression can be unambiguously determined
+
+### Literals
+
+#### Exponential notation
+
+```
+float expFloat = 1.39e-43f;
+// must have f, otherwise compiler takes numbers as doubles
+
+```
+
+### Bitwise operators
+
+bitwise And (&): produces a one in the output bit if both input bits are one
+
+bitwise Or (|): produces a one in the output bit if either input bit is one
+
+bitwise EXCLUSIVE OR (^): produces a one in the output bit if one or the other input bit is a noe, but not both
+
+bitwise NOT (~): unary operator
+
+### Shift operators
+
+left-shift operator (<<): produces the operand to the left of the operator after it has been shifted to the left
+
+right-shift operator (>>): produces the operand to the left of the operator after it has been shifted to the right
+
+for (<<= or >>= or >>>=): __char__, __short__ not shift; __int__, __long__ shift
+
+### Ternary if-else operator
+
+ternary/conditional operator:
+```
+boolean-exp ? value0 : value1
+```
