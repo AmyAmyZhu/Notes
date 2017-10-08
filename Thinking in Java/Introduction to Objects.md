@@ -84,6 +84,7 @@ ArrayList<Shape> shapes = new ArrayList<Shape>();
 2. place the objects in the heap dynamically
 
 Java uses dynamic meomory allocation: __new__ operator
+
 C++ must determine programmatically when to destroy the object, which can lead to memory leaks; Java provides garbage collector
 
 ### Exception handling: dealing with errors
@@ -103,6 +104,7 @@ Problems:
 #### Client-side programming
 
 HTML: text-entry boxes, check boxes, radio boxes, lists and dropdown lists and button
+
 cgi-bin: an action to run a program located on the server in a directory
 
 #### Scripting languages
