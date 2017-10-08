@@ -80,18 +80,37 @@ ArrayList<Shape> shapes = new ArrayList<Shape>();
 
 ### Object creation & lifetime
 
+1. place the objects in the stack, maximum runtime speed but restrictive
+2. place the objects in the heap dynamically
+
+Java uses dynamic meomory allocation: __new__ operator
+C++ must determine programmatically when to destroy the object, which can lead to memory leaks; Java provides garbage collector
+
 ### Exception handling: dealing with errors
 
-### Concurrent programming
+An exception is an object that is "thrown" from the site of the error and can be "caught" by an appropriate exception handler
 
 ### Java and the Internet
 
 #### client/server computing
 
-#### The Web as a giant server
+Problems:
+- desginer "balances" the layout of data into tables for optimal use
+- ensure one client's new data doesn't walk over another client's new data
+- built, debugged, and installed client software
+- small delay can be critical
 
 #### Client-side programming
 
+HTML: text-entry boxes, check boxes, radio boxes, lists and dropdown lists and button
+cgi-bin: an action to run a program located on the server in a directory
+
 #### Scripting languages
 
+can solve 80% pof the client-side programming problems
+
 #### Java
+
+Applet: a mini-program that will run only under a Web browser. When it is activated, it executes a program.
+
+JVM (java virtual machine): the software platform on which Java programs execute
